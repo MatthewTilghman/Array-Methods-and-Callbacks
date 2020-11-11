@@ -76,7 +76,7 @@ Write a function called `getAverageGoals` that accepts a parameter `data` and re
 function getAverageGoals(data) {
    let homeGoals = data.reduce((accumulator, item) => accumulator + item["Home Team Goals"],0)/data.length;
    let awayGoals = data.reduce((accumulator, item) => accumulator + item["Away Team Goals"],0)/data.length;
-   return `${((homeGoals+awayGoals))}` //TODO Need to find sum
+   return `${((homeGoals+awayGoals).toFixed(2))}` //TODO Need to find sum
 }
 
 
